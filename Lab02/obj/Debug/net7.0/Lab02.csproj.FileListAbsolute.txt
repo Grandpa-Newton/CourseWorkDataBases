@@ -1,0 +1,136 @@
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Lab02.exe
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Lab02.deps.json
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Lab02.runtimeconfig.json
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Lab02.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Lab02.pdb
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Azure.Core.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Azure.Identity.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Humanizer.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.CodeDom.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.Memory.Data.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\универ\РПБДИС\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.csproj.AssemblyReference.cache
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.GeneratedMSBuildEditorConfig.editorconfig
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.AssemblyInfoInputs.cache
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.AssemblyInfo.cs
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.csproj.CoreCompileInputs.cache
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.csproj.CopyComplete
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.dll
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\refint\Lab02.dll
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.pdb
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\Lab02.genruntimeconfig.cache
+C:\универ\РПБДИС\Lab02\obj\Debug\net7.0\ref\Lab02.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Lab02.exe
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Lab02.deps.json
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Lab02.runtimeconfig.json
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Lab02.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Lab02.pdb
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Azure.Core.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Azure.Identity.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Humanizer.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.CodeDom.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.Memory.Data.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.csproj.AssemblyReference.cache
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.GeneratedMSBuildEditorConfig.editorconfig
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.AssemblyInfoInputs.cache
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.AssemblyInfo.cs
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.csproj.CoreCompileInputs.cache
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.csproj.CopyComplete
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\refint\Lab02.dll
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.pdb
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\Lab02.genruntimeconfig.cache
+C:\универ\Новая папка\CourseWorkDataBases\Lab02\obj\Debug\net7.0\ref\Lab02.dll
