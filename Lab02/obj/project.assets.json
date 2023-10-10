@@ -2890,11 +2890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\универ\\Новая папка\\CourseWorkDataBases\\Lab02\\Lab02.csproj",
+      "projectUniqueName": "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab02\\Lab02.csproj",
       "projectName": "Lab02",
-      "projectPath": "C:\\универ\\Новая папка\\CourseWorkDataBases\\Lab02\\Lab02.csproj",
+      "projectPath": "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab02\\Lab02.csproj",
       "packagesPath": "C:\\Users\\ivang\\.nuget\\packages\\",
-      "outputPath": "C:\\универ\\Новая папка\\CourseWorkDataBases\\Lab02\\obj\\",
+      "outputPath": "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab02\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
