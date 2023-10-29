@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\универ\\РПБДИС\\Lab04\\Lab04.csproj": {}
+    "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab04\\Lab04.csproj": {}
   },
   "projects": {
-    "C:\\универ\\РПБДИС\\Lab04\\Lab04.csproj": {
+    "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab04\\Lab04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\универ\\РПБДИС\\Lab04\\Lab04.csproj",
+        "projectUniqueName": "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab04\\Lab04.csproj",
         "projectName": "Lab04",
-        "projectPath": "C:\\универ\\РПБДИС\\Lab04\\Lab04.csproj",
+        "projectPath": "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab04\\Lab04.csproj",
         "packagesPath": "C:\\Users\\ivang\\.nuget\\packages\\",
-        "outputPath": "C:\\универ\\РПБДИС\\Lab04\\obj\\",
+        "outputPath": "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab04\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4PVOT4rikunIv4gRdjdJ3UGlsXgKKeSG1wm40qocLda9hi05y4yKFsOYGAH+IgDTSI3TpvSq9m4O44qVaevE4w==",
+  "dgSpecHash": "GUycBzpycpObzOy5zs767SueSj6QgQq80OvTgdGCR9xD5kBC4cjftbbFHhWrxglhg65dTBFP8gKExqAxTKDbng==",
   "success": true,
-  "projectFilePath": "C:\\универ\\РПБДИС\\Lab04\\Lab04.csproj",
+  "projectFilePath": "C:\\универ\\CourseWork\\CourseWorkDataBases\\Lab04\\Lab04.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivang\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ivang\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
