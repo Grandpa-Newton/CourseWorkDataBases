@@ -1,0 +1,26 @@
+﻿@{
+
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Lab04.Models.Topic>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"Topics"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>TopicId</th>
+            <th>Name</th>
+        </tr>
+        @foreach (var topic in Model)
+        {
+            <tr>
+                <td>@topic.TopicId</td>
+                <td>@topic.Name</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

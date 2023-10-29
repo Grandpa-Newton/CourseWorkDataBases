@@ -1,0 +1,34 @@
+﻿@{
+
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Lab04.Models.User>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"User"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>UserId</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Surname</th>
+        </tr>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.Login</td>
+                <td>@user.Password</td>
+                <td>@user.Email</td>
+                <td>@user.Name</td>
+                <td>@user.Surname</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

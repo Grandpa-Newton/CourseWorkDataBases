@@ -1,0 +1,32 @@
+﻿@{
+
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Lab04.Models.Test>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"Tests"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>TestId</th>
+            <th>Name</th>
+            <th>NumberOfQuestions</th>
+            <th>Difficulty</th>
+            <th>Topic</th>
+        </tr>
+        @foreach (var test in Model)
+        {
+            <tr>
+                <td>@test.TestId</td>
+                <td>@test.Name</td>
+                <td>@test.NumberOfQuestions</td>
+                <td>@test.Topic.Name</td>
+                <td>@test.Difficulty.Name</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@{
+
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Lab04.Models.Result>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"Results"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>ResultId</th>
+            <th>Mark</th>
+            <th>TestName</th>
+            <th>UserLogin</th>
+        </tr>
+        @foreach (var result in Model)
+        {
+            <tr>
+                <td>@result.ResultId</td>
+                <td>@result.Mark</td>
+                <td>@result.Test.Name</td>
+                <td>@result.User.Login</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

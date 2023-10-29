@@ -1,0 +1,32 @@
+﻿@{
+
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Lab04.Models.Question>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"Questions"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>QuestionId</th>
+            <th>Name</th>
+            <th>Text</th>
+            <th>NumberOfPoints</th>
+            <th>TestName</th>
+        </tr>
+        @foreach (var question in Model)
+        {
+            <tr>
+                <td>@question.QuestionId</td>
+                <td>@question.Name</td>
+                <td>@question.Text</td>
+                <td>@question.NumberOfPoints</td>
+                <td>@question.Test.Name</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿@{
+
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Lab04.Models.CompletionMark>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"CompletionMarks"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>CompletionMarkId</th>
+            <th>Mark</th>
+            <th>TestName</th>
+            <th>UserLogin</th>
+        </tr>
+        @foreach (var mark in Model)
+        {
+            <tr>
+                <td>@mark.CompletionMarkId</td>
+                <td>@mark.Mark</td>
+                <td>@mark.Test.Name</td>
+                <td>@mark.User.Login</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>

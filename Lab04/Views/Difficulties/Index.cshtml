@@ -1,0 +1,26 @@
+﻿@{
+
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Lab04.Models.Difficulty>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"Difficulties"</title>
+</head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>DifficultyId</th>
+            <th>Name</th>
+        </tr>
+        @foreach (var difficulty in Model)
+        {
+            <tr>
+                <td>@difficulty.DifficultyId</td>
+                <td>@difficulty.Name</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
