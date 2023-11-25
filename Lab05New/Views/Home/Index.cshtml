@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"User"</title>
+</head>
+<body>
+    @if(User.Identity.IsAuthenticated)
+    {
+        <h2 class="display-2">Добро пожаловать на сайт, @User.Identity.Name!</h2>
+        <form method="post" asp-controller="Account" asp-action="Logout">
+            <input class="btn btn-lg btn-danger" style="margin-top: 10px" type="submit" value="Выход с аккаунта" />
+        </form>
+    }
+    else
+    {
+        <h2 class="display-2">Добро пожаловать на сайт, незнакомец!</h2>
+        <a style="margin-right: 10px" class="btn btn-lg btn-info" asp-controller="Account" asp-action="Login">Вход</a>
+        <a class="btn btn-lg btn-secondary" asp-controller="Account" asp-action="Register">Регистрация</a>
+    }
+</body>
+</html>

@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab05New
+build_property.RootNamespace = Lab05New
+build_property.ProjectDir = C:\универ\РПБДИС\Lab05New\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\универ\РПБДИС\Lab05New
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/универ/РПБДИС/Lab05New/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Answers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5zd2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/CompletionMarks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxldGlvbk1hcmtzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Difficulties/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlmZmljdWx0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Questions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Results/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdWx0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Results/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdWx0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Tests/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Tests/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Tests/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Tests/Take.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdHNcVGFrZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Topics/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Topics/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Topics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9waWNzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/универ/РПБДИС/Lab05New/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-42znqr46aj

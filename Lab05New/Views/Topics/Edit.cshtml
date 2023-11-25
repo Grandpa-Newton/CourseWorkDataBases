@@ -1,0 +1,47 @@
+﻿@model Lab05New.ViewModels.EditTopicViewModel
+
+@{
+    ViewBag.Title = "Изменение тематики";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Index">Поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Create">Добавление</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Изменение</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body text-center">
+                <form asp-action="Edit" asp-controller="Topics">
+                    <span class="form-group">
+                        <input type="hidden" asp-for="Id" />
+                    </span>
+                    <div class="form-group">
+                        <div class="form-group" style="margin-bottom: 10px">
+                            <label asp-for="Name">Название</label>
+                            <input type="text" asp-for="Name" class="form-control" />
+                            <span class="text-danger small" asp-validation-for="Name"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-outline-secondary" value="Сохранить" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

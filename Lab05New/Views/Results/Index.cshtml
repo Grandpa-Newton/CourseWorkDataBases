@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Results";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+@model Lab05New.ViewModels.ResultsViewModel
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <form asp-action="UpdateIndex" method="post" id="form">
+                <div class="card-header text-center">
+                    <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active">Поиск</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="test">Тест</label>
+                            <select class="form-control" id="test" name="test" asp-items="Model.FilterResultsViewModel.Tests"></select>
+                        </div>
+                        <div class="col">
+                            <label for="user">Пользователь</label>
+                            <select class="form-control" id="user" name="user" asp-items="Model.FilterResultsViewModel.Users"></select>
+                        </div>
+                    </div>
+                    <div class="form-row float-right" style="margin-top: 10px; margin-bottom: 10px">
+                        <div class="col">
+                            <input class="btn btn-primary" value="Очистить" type="button" onclick="clearInputs()" />
+                        </div>
+                        <div class="col">
+                            <input class="btn btn-info" type="submit" value="Найти" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card" style="margin-top: 10px">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>ResultId</th>
+                            <th>TestName</th>
+                            <th>UserName</th>
+                            <th>Mark</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in Model.Results)
+                        {
+                            <tr>
+                                <td>@result.ResultId</td>
+                                <td>@result.Test.Name</td>
+                                <td>@result.ApplicationUser.UserName</td>
+                                <td>@result.Mark</td>
+                                <td>
+                                    <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@result.ResultId">Изменить</a>
+                                </td>
+                                <td>
+                                    <form asp-action="Delete" asp-route-id="@result.ResultId" method="post">
+                                        <button type="submit" class="btn btn-sm btn-danger">
+                                            Удалить
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <nav style="margin-top: 10px">
+            <ul class="pagination justify-content-end">
+                @if (Model.PageViewModel.HasPreviousPage)
+                {
+                    <li class="page-item">
+                        <form asp-action="UpdateIndex" asp-route-page="@(Model.PageViewModel.PageNumber-1)"
+                          asp-route-test="@(Model.FilterResultsViewModel.SelectedTest)"
+                          asp-route-user="@(Model.FilterResultsViewModel.SelectedUser)" method="post">
+                            <button type="submit" class="page-link">
+                                Предыдущая
+                            </button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <button type="submit" class="page-link">
+                            Предыдущая
+                        </button>
+                    </li>
+                }
+
+                @if (Model.PageViewModel.HasNextPage)
+                {
+                    <li class="page-item">
+                        <form asp-action="UpdateIndex" asp-route-page="@(Model.PageViewModel.PageNumber+1)"
+                          asp-route-test="@(Model.FilterResultsViewModel.SelectedTest)"
+                          asp-route-user="@(Model.FilterResultsViewModel.SelectedUser)" method="post">
+                            <button type="submit" class="page-link">
+                                Следующая
+                            </button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <button type="submit" class="page-link">
+                            Следующая
+                        </button>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+    <script>
+        function clearInputs() {
+            let name = document.getElementById("user");
+            name.value = "";
+            let difficulty = document.getElementById("test");
+            difficulty.value = 0;
+
+            let form = document.getElementById("form");
+            form.submit();
+        }
+    </script>
+</body>
+</html>

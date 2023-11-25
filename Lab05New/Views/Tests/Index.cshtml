@@ -1,0 +1,185 @@
+﻿@{
+    ViewData["Title"] = "Tests";
+    Layout = "/Views/Shared/_Layout.cshtml";
+    bool isAdmin = User.IsInRole("admin");
+}
+@model Lab05New.ViewModels.TestsViewModel
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="containter">
+
+        <!--<a class="btn btn-sm btn-primary" asp-action="Create" style="margin-bottom: 10px">Добавить тест</a>
+        -->
+        <div class="card">
+            <form asp-action="UpdateIndex" method="post" id="form">
+
+                <div class="card-header text-center">
+                    <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active">Поиск</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Create">Добавление</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="difficulty">Сложность</label>
+                            <select class="form-control" name="difficulty" asp-items="Model.FilterTestsViewModel.Difficulties" id="difficulty"></select>
+                        </div>
+                        <div class="col">
+                            <label for="topic">Тематика</label>
+                            <select class="form-control" name="topic" asp-items="Model.FilterTestsViewModel.Topics" id="topic"></select>
+                        </div>
+                        <div class="col">
+                            <label for="name">Название</label>
+                            <input class="form-control" name="name" value="@Model.FilterTestsViewModel.SelectedName" id="name" />
+                        </div>
+                    </div>
+                    <div class="form-row float-right" style="margin-top:10px; margin-bottom:10px">
+                        <div class="col">
+                            <input class="btn btn-primary" value="Очистить" type="button" onclick="clearInputs()" />
+                        </div>
+                        <div class="col">
+                            <input class="btn btn-info" type="submit" value="Найти" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+        <div class="card" style="margin-top: 10px">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Id</th>
+                            <th>Название</th>
+                            <th>Кол-во вопросов</th>
+                            <th>Сложность</th>
+                            <th>Тематика</th>
+                            <th>Оценка</th>
+                            <th></th>
+                            @if (isAdmin)
+                            {
+                                <th></th>
+                                <th></th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var test in Model.Tests)
+                        {
+                            <tr>
+                                <td>@test.TestId</td>
+                                <td>@test.Name</td>
+                                <td>@test.NumberOfQuestions</td>
+                                <td>@test.Difficulty.Name</td>
+                                <td>@test.Topic.Name</td>
+                                @if (Model.CompletionMarks.FirstOrDefault(m => m.TestId == test.TestId && m.ApplicationUserId == Model.ApplicationUser.Id && m.Mark) == null)
+                                {
+                                    <td>Не прошёл</td>
+                                }
+                                else
+                                {
+                                    <td>@Model.Results.FirstOrDefault(r => r.TestId == test.TestId && r.ApplicationUserId == Model.ApplicationUser.Id).Mark</td>
+                                }
+                                <td>
+                                    <form asp-action="Take" asp-route-id="@test.TestId" method="get">
+                                        <button type="submit" class="btn btn-sm btn-success">
+                                            Пройти
+                                        </button>
+                                    </form>
+                                </td>
+                                @if (isAdmin)
+                                {
+                                    <td>
+                                        <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@test.TestId">Изменить</a>
+                                    </td>
+                                    <td>
+                                        <form asp-action="Delete" asp-route-id="@test.TestId" method="post">
+                                            <button type="submit" class="btn btn-sm btn-danger">
+                                                Удалить
+                                            </button>
+                                        </form>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <nav style="margin-top: 10px">
+            <ul class="pagination justify-content-end">
+                @if (Model.PageViewModel.HasPreviousPage)
+                {
+                    <li class="page-item">
+                        <form asp-action="UpdateIndex" asp-route-page="@(Model.PageViewModel.PageNumber-1)"
+                          asp-route-difficulty="@(Model.FilterTestsViewModel.SelectedDifficulty)"
+                          asp-route-topic="@(Model.FilterTestsViewModel.SelectedTopic)"
+                          asp-route-name="@(Model.FilterTestsViewModel.SelectedName)" method="post">
+                            <button type="submit" class="page-link">
+                                Предыдущая
+                            </button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <button type="submit" class="page-link">
+                            Предыдущая
+                        </button>
+                    </li>
+                }
+
+                @if (Model.PageViewModel.HasNextPage)
+                {
+                    <li class="page-item">
+                        <form asp-action="UpdateIndex" asp-route-page="@(Model.PageViewModel.PageNumber+1)"
+                          asp-route-difficulty="@(Model.FilterTestsViewModel.SelectedDifficulty)"
+                          asp-route-topic="@(Model.FilterTestsViewModel.SelectedTopic)"
+                          asp-route-name="@(Model.FilterTestsViewModel.SelectedName)" method="post">
+                            <button type="submit" class="page-link">
+                                Следующая
+                            </button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <button type="submit" class="page-link">
+                            Следующая
+                        </button>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function clearInputs() {
+            let name = document.getElementById("name");
+            name.value = "";
+            let difficulty = document.getElementById("difficulty");
+            difficulty.value = 0;
+            let topic = document.getElementById("topic");
+            topic.value = 0;
+
+            let form = document.getElementById("form");
+            form.submit();
+        }
+    </script>
+</body>
+</html>

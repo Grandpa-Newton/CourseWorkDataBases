@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Lab05New.Models.Answer" Collapsed="true">
+    <Position X="3.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAQAAAA=</HashCode>
+      <FileName>Models\Answer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.ApplicationUser" Collapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQADAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Models\ApplicationUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.CompletionMark" Collapsed="true">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACQgAAEAAAAAAAAAAAAAACACAAAAAA=</HashCode>
+      <FileName>Models\CompletionMark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.Difficulty" Collapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Difficulty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.ErrorViewModel" Collapsed="true">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.Question" Collapsed="true">
+    <Position X="1.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABEAAQAAAAAAAAAQAAACAQAAAA=</HashCode>
+      <FileName>Models\Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.Result" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAACQAAAEAAAAAAAAAAAAAACACAAAAAA=</HashCode>
+      <FileName>Models\Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.Test" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAkAAQCCAAgAAAEAAAAACAAIAA=</HashCode>
+      <FileName>Models\Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.TestingSystemDbContext" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAAAAAAQAAAAAAAAAAAAAAGAAAAAAEQAAAACAAIAA=</HashCode>
+      <FileName>Models\TestingSystemDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.Topic" Collapsed="true">
+    <Position X="1.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Topic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Models.User" Collapsed="true">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQABAAAAAACAAAQAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Controllers.AccountController" Collapsed="true">
+    <Position X="1.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAABAAAIAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Controllers.HomeController" Collapsed="true">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAIAAAAQAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Controllers.ResultsController" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAAAAAAAAAAAAAAAAAAAAAEAAAACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ResultsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Controllers.TestsController" Collapsed="true">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAAAIAAAAAAAAAAAAAAAQAEAAEACAAEIAAQAAQA=</HashCode>
+      <FileName>Controllers\TestsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Controllers.UsersController" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAAAAAAAAAAAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\UsersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.DbInitilializer" Collapsed="true">
+    <Position X="1.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbInitilializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.DbUserInitializer" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbUserInitializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab05New.Startup" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

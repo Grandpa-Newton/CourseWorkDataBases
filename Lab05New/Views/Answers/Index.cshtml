@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"]= "Answers";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<Lab05New.Models.Answer>
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>"Answers"</title>
+ </head>
+<body>
+    <table cellpadding="5">
+        <tr>
+            <th>AnswerID</th>
+            <th>AnswerText</th>
+            <th>QuestionText</th>
+        </tr>
+        @foreach (var answer in Model)
+        {
+            <tr>
+                <td>@answer.AnswerId</td>
+                <td>@answer.Text</td>
+                <td>@answer.Question.Text</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
