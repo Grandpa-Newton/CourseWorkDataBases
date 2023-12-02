@@ -1,0 +1,196 @@
+﻿@model TestingSystem.ViewModels.CreateTestViewModel
+@{
+    ViewBag.Title = "Добавление теста";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="container">
+        <form asp-action="Create" asp-controller="Tests">
+
+            <div class="card">
+                <div class="card-header text-center">
+                    <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Index">Поиск</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Добавление</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="difficulty">Сложность</label>
+                            <select id="difficulty" class="form-control" asp-for="DifficultyId" asp-items="Model.Difficulties"></select>
+                        </div>
+                        <div class="col">
+                            <label for="topic">Тематика</label>
+                            <select class="form-control" id="topic" asp-for="TopicId" asp-items="Model.Topics"></select>
+                        </div>
+                        <div class="col">
+                            <label for="name">Название</label>
+                            <input type="text" class="form-control" id="name" asp-for="Name" />
+                            <span class="text-danger small" asp-validation-for="Name"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 10px">
+                <div class="card-body">
+                    <h3 class="display-6">Список вопросов</h3>
+                    <div>
+                        <span class="text-danger small" asp-validation-for="QuestionNames"></span>
+                        <span class="text-danger small" asp-validation-for="QuestionTexts"></span>
+                        <span class="text-danger small" asp-validation-for="AnswerTexts"></span>
+                        <span class="text-danger small" asp-validation-for="QuestionNumberOfPoints"></span>
+                        <center>
+                            <div id="questions">
+                                @for (int i = 0; i < Model.QuestionNames.Count; i++)
+                                {
+                                    <div class="card" style="margin: 15px">
+                                        <div class="card-body bg-light">
+                                            <div class="form-group">
+                                                <input class="form-control" id="QuestionNames[@i]" name="QuestionNames" type="text" placeholder="Введите название вопроса" value="@Model.QuestionNames[i]" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" id="QuestionTexts[@i]" name="QuestionTexts" type="text" placeholder="Введите текст вопроса" value="@Model.QuestionTexts[i]" />
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" id="AnswerTexts[@i]" name="AnswerTexts" type="text" placeholder="Введите текст ответа" value="@Model.AnswerTexts[i]" />
+
+                                            </div>
+                                            <div class="form-group">
+                                                <input required class="form-control" id="QuestionNumberOfPoints[@i]" name="QuestionNumberOfPoints" type="number" placeholder="Введите количество баллов" value="@Model.QuestionNumberOfPoints[i]" />
+                                            </div>
+                                            <div class="form-group" style="margin-bottom:-10px">
+                                                <input type="button" class="btn btn-danger" value="Удалить" onclick="deleteQuestion(this.id)" id="button{@i}" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div style="margin-top: 10px">
+                                <input type="button" class="btn btn-primary" value="Добавить вопрос" onclick="addNewQuestion()" />
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <center style="margin-top: 10px">
+                <input type="submit" class="btn btn-success justify-content-center" value="Сохранить" />
+            </center>
+        </form>
+    </div>
+    <script>
+        let questionNumber = @Model.QuestionTexts.Count; // номер по очереди добавления
+        function addNewQuestion() {
+            let container = document.getElementById("questions");
+            let fieldCount = container.getElementsByTagName("input").length / 4;
+            let nextFieldId = fieldCount + 1;
+
+            let div = document.createElement("div");
+            div.setAttribute("class", "card");
+            div.setAttribute("style", "margin: 15px");
+
+            let secondDiv = document.createElement("div");
+            secondDiv.setAttribute("class", "card-body bg-light");
+
+            let questionNameFieldDiv = document.createElement("div");
+            questionNameFieldDiv.setAttribute("class", "form-group");
+
+            let questionNameField = document.createElement("input");
+            questionNameField.setAttribute("id", "QuestionNames[" + questionNumber + "]");
+            questionNameField.setAttribute("name", "QuestionNames");
+            questionNameField.setAttribute("type", "text");
+            questionNameField.setAttribute("class", "form-control");
+            questionNameField.setAttribute("placeholder", "Введите название вопроса");
+
+            questionNameFieldDiv.appendChild(questionNameField);
+
+            secondDiv.appendChild(questionNameFieldDiv);
+
+            let questionTextFieldDiv = document.createElement("div");
+            questionTextFieldDiv.setAttribute("class", "form-group");
+
+            let questionTextField = document.createElement("input");
+            questionTextField.setAttribute("class", "form-control");
+            questionTextField.setAttribute("id", "QuestionTexts[" + questionNumber + "]");
+            questionTextField.setAttribute("name", "QuestionTexts");
+            questionTextField.setAttribute("type", "text");
+            questionTextField.setAttribute("placeholder", "Введите текст вопроса");
+
+            questionTextFieldDiv.appendChild(questionTextField);
+            secondDiv.appendChild(questionTextFieldDiv);
+
+
+            let answerTextFieldDiv = document.createElement("div");
+            answerTextFieldDiv.setAttribute("class", "form-group");
+
+
+            let answerTextField = document.createElement("input");
+            answerTextField.setAttribute("class", "form-control");
+            answerTextField.setAttribute("id", "AnswerTexts[" + questionNumber + "]");
+            answerTextField.setAttribute("name", "AnswerTexts");
+            answerTextField.setAttribute("type", "text");
+            answerTextField.setAttribute("placeholder", "Введите текст ответа");
+
+            answerTextFieldDiv.appendChild(answerTextField);
+            secondDiv.appendChild(answerTextFieldDiv);
+
+
+            let questionNumberOfPointsFieldDiv = document.createElement("div");
+            questionNumberOfPointsFieldDiv.setAttribute("class", "form-group");
+
+            let questionNumberOfPointsField = document.createElement("input");
+            questionNumberOfPointsField.setAttribute("class", "form-control");
+            questionNumberOfPointsField.setAttribute("id", "QuestionNumberOfPoints[" + questionNumber + "]");
+            questionNumberOfPointsField.setAttribute("name", "QuestionNumberOfPoints");
+            questionNumberOfPointsField.setAttribute("type", "number");
+            questionNumberOfPointsField.setAttribute("placeholder", "Введите количество баллов");
+            questionNumberOfPointsField.required = true;
+            questionNumberOfPointsFieldDiv.appendChild(questionNumberOfPointsField);
+            secondDiv.appendChild(questionNumberOfPointsFieldDiv);
+
+
+            let deleteButtonDiv = document.createElement("div");
+            deleteButtonDiv.setAttribute("class", "form-group");
+            deleteButtonDiv.setAttribute("style", "margin-bottom:-10px");
+
+            let deleteButton = document.createElement("input");
+            deleteButton.setAttribute("type", "button");
+            deleteButton.setAttribute("class", "btn btn-danger");
+            deleteButton.setAttribute("value", "Удалить");
+            deleteButton.setAttribute("onclick", "deleteQuestion(this.id)");
+            deleteButton.setAttribute("id", "button" + questionNumber);
+            deleteButton.setAttribute("style", "margin: 10px 0px 0px");
+            deleteButtonDiv.appendChild(deleteButton);
+            secondDiv.append(deleteButtonDiv);
+
+
+            div.appendChild(secondDiv);
+
+            container.appendChild(div);
+
+            questionNumber++;
+
+
+            let a = document.getElementById("tstLabel");
+            a.innerHTML = questionNumber;
+        }
+
+        function deleteQuestion(id) {
+
+            let button = document.getElementById(id);
+
+            let parent = button.parentElement.parentElement.parentElement;
+
+            parent.innerHTML = '';
+
+            parent.classList.remove("card");
+        }
+    </script>
+</body>
+</html>

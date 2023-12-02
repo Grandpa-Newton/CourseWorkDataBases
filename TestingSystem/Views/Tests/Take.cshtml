@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Прохождение теста";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+@model TestingSystem.ViewModels.TakeTestViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form method="post">
+        <input type="hidden" name="testId" value="@Model.Test.TestId" />
+        <div class="card">
+            <div class="card-body">
+                @for (int i = 0; i < Model.Test.Questions.Count; i++)
+                {
+                    <div class="card" style="margin-bottom: 10px">
+                        <div class="card-header">
+                            <h4>@Model.Test.Questions.ToList()[i].Name</h4>
+                        </div>
+                        <div class="card-body">
+
+                            <h5>@Model.Test.Questions.ToList()[i].Text</h5>
+                            <div class="form-group">
+                                <input type="text" name="answers[@i]" class="form-control" placeholder="Ответ" value="" />
+                            </div>
+                        </div>
+                    </div>
+                }
+                <center>
+                    <input class="btn btn-success" type="submit" value="Отправить" />
+                </center>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

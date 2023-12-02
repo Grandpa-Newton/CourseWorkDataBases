@@ -1,0 +1,50 @@
+﻿@model TestingSystem.ViewModels.EditResultViewModel
+
+@{
+    ViewBag.Title = "Изменение результата";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Index">Поиск</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Изменение</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit" asp-controller="Results">
+                    <span class="form-group">
+                        <input type="hidden" asp-for="Id"/>
+                    </span>
+                    <div class="form-group">
+                        <label asp-for="UserName" class="control-label">Логин пользователя</label>
+                        <input type="text" asp-for="UserName" readonly class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TestName" class="control-label">Название теста</label>
+                        <input type="text" asp-for="TestName" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Mark" class="control-label">Оценка</label>
+                        <input type="number" asp-for="Mark" class="form-control" />
+                        <span class="text-danger small" asp-validation-for="Mark"></span>
+                    </div>
+                    <div class="form-group text-center">
+                        <input type="submit" class="btn btn-success" value="Сохранить" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
