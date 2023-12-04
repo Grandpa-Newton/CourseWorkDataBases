@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lab06</name>
+    </assembly>
+    <members>
+        <member name="M:Lab06.Controllers.DifficultyController.Get">
+            <summary>
+            Получение всех сложностей
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lab06.Controllers.DifficultyController.Get(System.Int32)">
+            <summary>
+            Получение сложности по Id
+            </summary>
+            <param name="id">Id сложности</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lab06.Controllers.TestsController.Get">
+            <summary>
+            Получение всех тестов
+            </summary>
+            <returns>Список тестов</returns>
+        </member>
+        <member name="M:Lab06.Controllers.TestsController.Get(System.Int32)">
+            <summary>
+            Получение теста по Id
+            </summary>
+            <param name="id">Id теста</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lab06.Controllers.TestsController.Post(Lab06.Models.Test)">
+            <summary>
+            Добавление нового теста
+            </summary>
+            <param name="test">Тест для добавления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lab06.Controllers.TestsController.Put(Lab06.Models.Test)">
+            <summary>
+            Обновление теста
+            </summary>
+            <param name="test">Тест для обновления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lab06.Controllers.TestsController.Delete(System.Int32)">
+            <summary>
+            Удаление теста по Id
+            </summary>
+            <param name="id">Id теста для удаления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Lab06.Controllers.TopicsController.Get">
+            <summary>
+            Получение списка тематик
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Lab06.Controllers.TopicsController.Get(System.Int32)">
+            <summary>
+            Получение тематики по Id
+            </summary>
+            <param name="id">Id тематики</param>
+            <returns></returns>
+        </member>
+        <member name="T:Lab06.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:Lab06.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Lab06.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Lab06.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

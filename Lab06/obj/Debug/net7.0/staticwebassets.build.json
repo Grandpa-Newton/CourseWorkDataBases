@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "W2TcVEhL6ntnkzwzn17M1DvolZXLQU4bqoDVoazbc/s=",
+  "Source": "Lab06",
+  "BasePath": "_content/Lab06",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Lab06\\wwwroot",
+      "Source": "Lab06",
+      "ContentRoot": "C:\\универ\\РПБДИС\\Lab06\\wwwroot\\",
+      "BasePath": "_content/Lab06",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\универ\\РПБДИС\\Lab06\\wwwroot\\tests.html",
+      "SourceId": "Lab06",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\универ\\РПБДИС\\Lab06\\wwwroot\\",
+      "BasePath": "_content/Lab06",
+      "RelativePath": "tests.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\tests.html"
+    }
+  ]
+}

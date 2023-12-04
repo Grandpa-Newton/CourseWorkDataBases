@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=deivice-width" />
+    <title>Список тестов</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Список тестов</h2>
+    <div id="errors" class="alert alert-danger" style="display:none;">
+
+    </div>
+    <form name="testForm">
+        <input type="hidden" name="id" value="0" />
+        <div class="form-group col-md-5">
+            <label for="name">Название:</label>
+            <input class="form-control" name="name" />
+        </div>
+        <div class="form-group col-md-5">
+            <label for="difficulty">Сложность:</label>
+            <select class="form-control" name="difficulty" id="difficultySelect"></select>
+        </div>
+        <div class="form-group col-md-5">
+            <label for="topic">Тематика:</label>
+            <select class="form-control" name="topic" id="topicSelect"></select>
+        </div>
+        <div class="form-group col-md-5">
+            <label for="numberOfQuestions">Количество вопросов:</label>
+            <input type="number" class="form-control" name="numberOfQuestions" />
+        </div> 
+        <div class="panel-body">
+            <button type="submit" id="submit" class="btn btn-primary">Сохранить</button>
+            <a id="reset" class="btn btn-primary">Сбросить</a>
+        </div>
+    </form>
+    <table class="table table-condensed table-striped col-md-6">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Название</th>
+                <th>Сложность</th>
+                <th>Тематика</th>
+                <th>Количество вопросов</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <label id="testLabel">
+
+    </label>
+    <script>
+        async function GetTests() {
+            const response = await fetch("api/tests", {
+                method: "GET",
+                headers: { "Accept": "application/json"}
+            });
+
+            if (response.ok == true) {
+                const tests = await response.json();
+                let rows = document.querySelector("tbody");
+                tests.forEach(test => {
+                    rows.append(row(test));
+                });
+            }
+        }
+
+        async function GetTest(id) {
+            const response = await fetch("/api/tests/" + id, {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok == true) {
+                const test = await response.json();
+                const form = document.forms["testForm"];
+                form.elements["id"].value = test.testId;
+                form.elements["name"].value = test.name;
+                form.elements["difficulty"].value = test.difficultyId;
+                form.elements["topic"].value = test.topicId;
+                form.elements["numberOfQuestions"].value = test.numberOfQuestions;
+            }
+        }
+
+        function row(test) {
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", test.testId);
+
+            const idTd = document.createElement("td");
+            idTd.append(test.testId);
+            tr.append(idTd);
+
+            const nameTd = document.createElement("td");
+            nameTd.append(test.name);
+            tr.append(nameTd);
+
+            const difficultyTd = document.createElement("td");
+            difficultyTd.append(test.difficulty.name);
+            tr.append(difficultyTd);
+
+            const topicTd = document.createElement("td");
+            topicTd.append(test.topic.name);
+            tr.append(topicTd);
+
+            const numberTd = document.createElement("td");
+            numberTd.append(test.numberOfQuestions);
+            tr.append(numberTd);
+
+            const linksTd = document.createElement("td");
+
+            const editLink = document.createElement("a");
+            editLink.setAttribute("data-id", test.TestId);
+            editLink.setAttribute("style", "cursor:pointer;padding:15px;");
+            editLink.append("Изменить");
+            editLink.addEventListener("click", e => {
+                e.preventDefault();
+                GetTest(test.testId);
+            });
+            linksTd.append(editLink);
+
+            const removeLink = document.createElement("a");
+            removeLink.setAttribute("data-id", test.TestId);
+            removeLink.setAttribute("style", "cursor:pointer;padding:15px;");
+            removeLink.append("Удалить");
+            removeLink.addEventListener("click", e => {
+
+                e.preventDefault();
+                DeleteTest(test.testId);
+            });
+
+            linksTd.append(removeLink);
+            tr.appendChild(linksTd);
+
+            return tr;
+
+
+        }
+
+        function optionTopic(topic) {
+            const option = document.createElement("option");
+            option.setAttribute("value", topic.topicId);
+            option.innerHTML = topic.name;
+
+            return option;
+        }
+
+        function optionDifficulty(difficulty) {
+            const option = document.createElement("option");
+            option.setAttribute("value", difficulty.difficultyId);
+            option.innerHTML = difficulty.name;
+
+            return option;
+        }
+
+        async function GetTopicList() {
+            const response = await fetch("api/topics", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+
+            if (response.ok == true) {
+                const topics = await response.json();
+                let topicsSelect = document.getElementById("topicSelect");
+                topics.forEach(topic => {
+                    topicsSelect.append(optionTopic(topic));
+                });
+            }
+        }
+
+        async function GetDifficultyList() {
+            const response = await fetch("api/difficulty", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+
+            if (response.ok == true) {
+                const difficulties = await response.json();
+                let difficultySelect = document.getElementById("difficultySelect");
+                difficulties.forEach(difficulty => {
+                    difficultySelect.append(optionDifficulty(difficulty));
+                });
+            }
+        }
+
+        async function CreateTest(testName, testDifficulty, testTopic, testNumber) {
+            document.getElementById("errors").innerHTML = "";
+            document.getElementById("errors").style.display = "none";
+            const response = await fetch("api/tests", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: testName,
+                    difficultyId: parseInt(testDifficulty),
+                    topicId: parseInt(testTopic),
+                    numberOfQuestions: parseInt(testNumber),
+                })
+            });
+            if (response.ok == true) {
+                const test = await response.json();
+                // document.getElementById("testLabel").innerHTML = test;
+                reset();
+                document.querySelector("tbody").append(row(test));
+            }
+            else {
+                const errorData = await response.json();
+                console.log("errors", errorData);
+                if (errorData) {
+                    if (errorData.errors) {
+                        if (errorData.errors["Name"]) {
+                            addError(errorData.errors["Name"]);
+                        }
+                        if (errorData.errors["NumberOfQuestions"]) {
+                            addError(errorData.errors["NumberOfQuestions"]);
+                        }
+                        if (errorData.errors["test"]) {
+                            addError(errorData.errors["test"]);
+                        }
+                    }
+                    if (errorData["Name"]) {
+                        addError(errorData["Name"]);
+                    }
+                    if (errorData["NumberOfQuestions"]) {
+                        addError(errorData["NumberOfQuestions"]);
+                    }
+                    if (errorData["test"]) {
+                        addError(errorData["test"]);
+                    }
+                }
+
+                document.getElementById("errors").style.display = "block";
+            }
+        }
+
+        function addError(errors) {
+            errors.forEach(error => {
+                const p = document.createElement("p");
+                p.append(error);
+                document.getElementById("errors").append(p);
+            })
+        }
+
+        async function EditTest(id, testName, testDifficulty, testTopic, testNumber) {
+            document.getElementById("errors").innerHTML = "";
+            document.getElementById("errors").style.display = "none";
+            const response = await fetch("api/tests", {
+                method: "PUT",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    testId: id,
+                    name: testName,
+                    difficultyId: parseInt(testDifficulty),
+                    topicId: parseInt(testTopic),
+                    numberOfQuestions: parseInt(testNumber),
+                })
+            });
+            if (response.ok == true) {
+                const test = await response.json();
+                reset();
+                document.querySelector("tr[data-rowid='" + test.testId + "']").replaceWith(row(test));
+            }
+            else {
+                const errorData = await response.json();
+                console.log("errors", errorData);
+                if (errorData) {
+                    if (errorData.errors) {
+                        if (errorData.errors["Name"]) {
+                            addError(errorData.errors["Name"]);
+                        }
+                        if (errorData.errors["NumberOfQuestions"]) {
+                            addError(errorData.errors["NumberOfQuestions"]);
+                        }
+                        if (errorData.errors["test"]) {
+                            addError(errorData.errors["test"]);
+                        }
+                    }
+                    if (errorData["Name"]) {
+                        addError(errorData["Name"]);
+                    }
+                    if (errorData["NumberOfQuestions"]) {
+                        addError(errorData["NumberOfQuestions"]);
+                    }
+                    if (errorData["test"]) {
+                        addError(errorData["test"]);
+                    }
+                }
+
+                document.getElementById("errors").style.display = "block";
+            }
+        }
+
+        async function DeleteTest(id) {
+            const response = await fetch("api/tests/" + id, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok == true) {
+                const test = await response.json();
+                document.querySelector("tr[data-rowid='" + test.testId + "']").remove();
+            }
+        }
+
+        function reset() {
+            const form = document.forms["testForm"];
+            form.reset();
+            form.elements["id"].value = 0;
+        }
+
+        document.getElementById("reset").click(function (e) {
+            e.preventDefault();
+            reset();
+        })
+
+        document.forms["testForm"].addEventListener("submit", e => {
+            e.preventDefault();
+            const form = document.forms["testForm"];
+            const id = form.elements["id"].value;
+            const name = form.elements["name"].value;
+            const difficulty = form.elements["difficulty"].value;
+            const topic = form.elements["topic"].value;
+            const number = form.elements["numberOfQuestions"].value;
+           // document.getElementById("testLabel").innerHTML = form + id + name + difficulty + topic + number;
+            if (id == 0) {
+                CreateTest(name, difficulty, topic, number);
+            }
+            else {
+                EditTest(id, name, difficulty, topic, number);
+            }
+        })
+
+        GetDifficultyList();
+        GetTopicList();
+        GetTests();
+    </script>
+</body>
+</html>
